@@ -28,11 +28,11 @@ int UserNumber = Convert.ToInt32(Console.ReadLine());
 
     for (int count = 0; count < digitsOfNumbers; count++){
       advance = UserNumber - UserNumber % 10;
-      result = result + (numberN - advance);
-      numberN = numberN / 10;
+      result = result + (UserNumber - advance);
+      UserNumber = UserNumber / 10;
     }
    return result;
   }
 
-int sumNumber = SumNumber(numberN);
-Console.WriteLine(SumNumber);
+int sumNumber = SumNumber(UserNumber);
+Console.WriteLine(UserNumber);

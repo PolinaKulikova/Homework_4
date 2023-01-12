@@ -19,7 +19,7 @@ int GetNumberByUser(string text)
 // // int[] <- (int)
 int[] CreateArray(int size);
 {
-    return new int[ size + 1] 
+    return new int[ size + 1]; 
 }
 
 // // 3. Заполнение массива 0 и 1
