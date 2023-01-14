@@ -65,7 +65,7 @@ int countByUser = GetNumberByUser("Введите N");
 int[] array = CreateArray(countByUser);
 FillArray(array);                                   // Вызов метода заполнения  массива
 PrintArray(array);                                  // Вызов метода печати массива
-int result = toDecimal(array);                      //кладем результат конвертации в int
-string decNumber = PrintArray(array);               // делаем строку из результата распечатки
+int result = toDecimal(array);                      // Кладем результат конвертации в int
+string decNumber = PrintArray(array);               // Делаем строку из результата распечатки
 Console.WriteLine(decNumber);            
 Console.WriteLine(GoodPrint(array, result));
