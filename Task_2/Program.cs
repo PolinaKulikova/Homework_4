@@ -11,18 +11,15 @@ int GetNumberByUser(string text)                      // Получили чис
 
 int SumOfNumbers(int countByUser)                     // Разбили по разрядам , переведя в строку
 {
-    int count = Convert.ToString(countByUser).Length;
-    int shift = 0;
-    int result = 0;
+  int result = 0;
 
-    for (int i = 0; i < count; i++)
+    while (countByUser > 0)
     {
-      shift = countByUser - countByUser % 10;
-      result = result + (countByUser - shift);
-      countByUser = countByUser / 10;
+      result += countByUser % 10;
+      countByUser /= 10;
     }
-   return result;
-  }
+return result;
+}
 
 int countByUser = GetNumberByUser("Введите число, если хочешь узнать сумму его цифр");
 int sum = SumOfNumbers(countByUser);
