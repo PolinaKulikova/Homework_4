@@ -61,7 +61,7 @@
 //     return $"{String.Join("", collection)} >> {dec}";
 // }
 
-int countByUser = GetNumberByUser("Введите N");
+int countByUser = GetNumberByUser("Введите число");
 int[] array = CreateArray(countByUser);
 FillArray(array);                                   // Вызов метода заполнения  массива
 PrintArray(array);                                  // Вызов метода печати массива
